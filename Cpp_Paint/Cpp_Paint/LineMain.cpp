@@ -113,9 +113,9 @@ LineClass TestFunction(LineClass Line)
 /*                                                                           */
 /*  Output Para : Errorcode to the operatingsystem, Allways no error         */
 /*                                                                           */
-/*  Author      : I. Oesch                                                   */
+/*  Author      : ingmacmech                                                 */
 /*                                                                           */
-/*  History     : 05.03.2001  IO  Created                                    */
+/*  History     : 21.02.2017      Created                                    */
 /*                                                                           */
 /*****************************************************************************/
 int main(int argc, char *argv[])
@@ -134,13 +134,13 @@ int main(int argc, char *argv[])
 	//  LineClass *LinePtr1 = NULL;
 
 	// Create two objects
-	//  LineClass Line1(1,1,11,11);
+	LineClass Line1(1,1,11,11);
 	//  LineClass Line2(2,2,22,22);
 	//  LineClass Line1;  // Delete this, just to make uncompleted Code runnable
 	//  LineClass Line2;  // Delete this, just to make uncompleted Code runnable
 
 	// Print the two objects
-	//  Line1.Print();
+	Line1.Print();
 	//  Line2.Print();
 
 	// Create a new object...
