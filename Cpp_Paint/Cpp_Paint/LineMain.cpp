@@ -130,26 +130,28 @@ int main(int argc, char *argv[])
 	// Call the local function
 	FunctionWithLocalObject(6);
 
-	// Define a pointer to lineclass objects
-	//  LineClass *LinePtr1 = NULL;
+	
 
 	// Create two objects
 	LineClass Line1(1,1,11,11);
-	//  LineClass Line2(2,2,22,22);
+	LineClass Line2(2,2,22,22);
 	//  LineClass Line1;  // Delete this, just to make uncompleted Code runnable
 	//  LineClass Line2;  // Delete this, just to make uncompleted Code runnable
 
 	// Print the two objects
 	Line1.Print();
-	//  Line2.Print();
+	Line2.Print();
+
+	// Define a pointer to lineclass objects
+	LineClass *LinePtr1 = NULL;
 
 	// Create a new object...
-	//  LinePtr1 = new LineClass(3,3,33,33);
+	LinePtr1 = new LineClass(3,3,33,33);
 
 	// ...print it...
-	//  LinePtr1->Print();
+	LinePtr1->Print();
 	// ...and delete it
-	//  delete LinePtr1;
+	delete LinePtr1;
 
 	// Create another new object
 	//  LinePtr1 = new LineClass(4,4,44,44);
