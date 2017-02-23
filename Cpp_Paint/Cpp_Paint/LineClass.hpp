@@ -39,11 +39,17 @@ class LineClass {
 	int X2;
 	int Y1;
 	int Y2;
+	char id[10];
 
 	// Methods
 public:
+	// Constructor
 	LineClass(int xEnd, int yEnd);
 	LineClass(int xStart, int yStart, int xStop, int yStop);
+	
+
+	// Methode
+	void SetLineID(char id[]);
 	void Print();
 
 };
