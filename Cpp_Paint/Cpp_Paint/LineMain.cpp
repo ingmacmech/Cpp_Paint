@@ -144,6 +144,7 @@ int main(int argc, char *argv[])
 
 	// Define a pointer to lineclass objects
 	LineClass *LinePtr1 = NULL;
+	//LineClass *LinePrt2 = NULL;
 
 	// Create a new object...
 	LinePtr1 = new LineClass(3,3,33,33);
@@ -154,21 +155,24 @@ int main(int argc, char *argv[])
 	delete LinePtr1;
 
 	// Create another new object
-	//  LinePtr1 = new LineClass(4,4,44,44);
+	LinePtr1 = new LineClass(4,4,44,44);
 
 	// ...and print it
-	//  LinePtr1->Print();
+	LinePtr1->Print();
 
 	// Call the local function
 	FunctionWithLocalObject(7);
 
 	// delete the dynamic object
-	//  delete LinePtr1;
+	delete LinePtr1;
 
 	// Show what copyconstructor does
 	std::cout << "\nLet's copyconstruct...\n" << std::endl;
-	//Line2 = TestFunction(Line1);
-
+	Line2 = TestFunction(Line1);
+	
+	LineClass LinePrt2 = LineClass(Line1);
+	LinePrt2.Print();
+	
 	// Wait for the user to press any key before end the program
 	system("Pause");
 

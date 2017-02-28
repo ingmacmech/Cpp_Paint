@@ -44,9 +44,15 @@ class LineClass {
 	// Methods
 public:
 	// Constructor
+	LineClass();
 	LineClass(int xEnd, int yEnd);
 	LineClass(int xStart, int yStart, int xStop, int yStop);
+
+	// Copy Constructor
+	//LineClass(const LineClass &Source);
 	
+	// Destructor
+	~LineClass();
 
 	// Methode
 	void SetLineID(char id[]);
